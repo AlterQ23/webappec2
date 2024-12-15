@@ -1,7 +1,7 @@
 import { EC2Client, DescribeInstancesCommand } from '@aws-sdk/client-ec2';
 
 // Crear un cliente de EC2
-const client = new EC2Client({ region: process.env.AWS_REGION || 'us-east-1' });
+const client = new EC2Client({ region: process.env.MY_ALTER_AWS_REGION || 'us-east-1' });
 
 export default async function handler(req, res) {
   try {

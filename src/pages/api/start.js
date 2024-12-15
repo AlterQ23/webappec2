@@ -1,6 +1,6 @@
 import { EC2Client, StartInstancesCommand } from '@aws-sdk/client-ec2';
 
-const client = new EC2Client({ region: process.env.AWS_REGION || 'us-east-1' });
+const client = new EC2Client({ region: process.env.MY_ALTER_AWS_REGION || 'us-east-1' });
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
